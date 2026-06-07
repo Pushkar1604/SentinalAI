@@ -3,6 +3,19 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.ml import router as ml_router
 
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "https://sentinal-ai-xi.vercel.app",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 app = FastAPI(
     title="FraudShield AI"
 )
