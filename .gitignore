@@ -1,0 +1,23 @@
+# Node
+node_modules
+.next
+
+# Python
+__pycache__
+*.pyc
+venv
+.env
+
+# Models
+backend/app/models/*.pkl
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+backend/app/data/DataSet.csv
+backend/app/data/
+backend/test_gemini.py
